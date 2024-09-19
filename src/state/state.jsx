@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import filter from "../utils/filter";
-import Loader from "../components/Loader/Loader"; // Import the Loader component
+import Loader from "../components/Loader/Loader";
 
 const initialDisplayState = {
   grouping: "status",
@@ -27,7 +27,7 @@ const AppProvider = ({ children }) => {
       ? JSON.parse(storedDisplayState)
       : initialDisplayState;
   });
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
 
   const value = {
     data,
@@ -55,10 +55,14 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(displayState));
+    console.log("Display State:", displayState);
   }, [displayState]);
 
   useEffect(() => {
-    setDataToRender(data && filter(data, displayState));
+    const filteredData = data && filter(data, displayState);
+    setDataToRender(filteredData);
+    console.log("Data:", data);
+    console.log("Data to Render:", filteredData);
   }, [data, displayState]);
 
   return (

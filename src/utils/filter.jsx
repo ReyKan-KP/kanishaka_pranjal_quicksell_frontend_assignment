@@ -12,7 +12,7 @@ export default function filterData(data, displayState) {
           icon: getStatusIcon(status),
           tickets: data.tickets
             .filter((ticket) => ticket.status === status)
-            .sort((a, b) => a.priority - b.priority),
+            .sort((a, b) => b.priority - a.priority),
         };
       });
       return sortedTickets;
@@ -45,7 +45,7 @@ export default function filterData(data, displayState) {
           ),
           tickets: data.tickets
             .filter((ticket) => ticket.userId === user.id)
-            .sort((a, b) => a.priority - b.priority),
+            .sort((a, b) => b.priority - a.priority),
         };
       });
       return sortedTickets;
