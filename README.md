@@ -32,13 +32,13 @@ Make sure you have **Node.js** and **npm** installed on your local machine. If n
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/kanban-board-app.git
+   git clone https://github.com/ReyKan-KP/kanishaka_pranjal_quicksell_frontend_assignment.git
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd kanban-board-app
+   cd kanishaka_pranjal_quicksell_frontend_assignment
    ```
 
 3. Install dependencies:
