@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Frontend Assignment - Kanban Board Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an interactive **Kanban board** built using **React JS**. It consumes data from an external API and offers a responsive, user-friendly interface for managing tasks by grouping them based on different criteria like status, user, and priority.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- **Group By Options**: Tickets can be grouped by:
+  - **Status**
+  - **User**
+  - **Priority**
+- **Sorting Options**: Tickets can be sorted by:
+  - **Priority** (descending)
+  - **Title** (ascending)
+- **Persistent State**: The user's view preferences are saved even after page reloads.
+- **Pure CSS Styling**: All styles are written in pure CSS without using external libraries (Bootstrap, Tailwind, etc.).
+- **API Integration**: Data is fetched dynamically from the provided API endpoint.
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is live and can be accessed at:  
+[https://kanishaka-pranjal-quicksell-frontend-assignment.vercel.app/](https://kanishaka-pranjal-quicksell-frontend-assignment.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have **Node.js** and **npm** installed on your local machine. If not, you can download them from [Node.js official site](https://nodejs.org/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/kanban-board-app.git
+   ```
 
-### `npm run eject`
+2. Navigate into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd kanban-board-app
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the App
 
-## Learn More
+To start the application in development mode, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will open on [http://localhost:3000](http://localhost:3000) in your browser. The page will reload automatically when you make changes.
 
-### Code Splitting
+### Building for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To build the app for production, run:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This will create a production-ready version of the app in the `build` folder, which can then be deployed to any hosting provider.
 
-### Making a Progressive Web App
+### Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To run the tests in interactive watch mode, run:
 
-### Advanced Configuration
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## API Information
 
-### Deployment
+The application fetches tasks and updates from the following API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**API Endpoint**: [https://api.quicksell.co/v1/internal/frontend-assignment](https://api.quicksell.co/v1/internal/frontend-assignment)
 
-### `npm run build` fails to minify
+The API returns ticket data including status, user, and priority, which is dynamically displayed on the Kanban board based on user actions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Priority Levels
+
+The API provides the following priority levels:
+- **4**: Urgent
+- **3**: High
+- **2**: Medium
+- **1**: Low
+- **0**: No priority
+
+
+
+---
+
+Made by:  
+**Kanishaka Pranjal**  
+Email: kanishaka.p21@iiits.in
