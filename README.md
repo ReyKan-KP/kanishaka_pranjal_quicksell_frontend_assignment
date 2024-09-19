@@ -20,6 +20,11 @@ This project is an interactive **Kanban board** built using **React JS**. It con
 The project is live and can be accessed at:  
 [https://kanishaka-pranjal-quicksell-frontend-assignment.vercel.app/](https://kanishaka-pranjal-quicksell-frontend-assignment.vercel.app/)
 
+## Images
+
+![Grouping Feature](https://iili.io/dPAhj7j.png)  
+![Kanban Board](https://iili.io/dPAhwkx.png)  
+![Task View](https://iili.io/dPAhhdb.png)
 
 ## Getting Started
 
