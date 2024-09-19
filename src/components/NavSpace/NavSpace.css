@@ -1,0 +1,15 @@
+.nav-space-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.25rem 3rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-space-wrapper {
+    padding: 1rem;
+  }
+}
